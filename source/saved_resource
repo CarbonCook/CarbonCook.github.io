@@ -1,0 +1,116 @@
+<html><head><title>参数说明</title></head><body style="font-size:12px;margin-left:100px;margin-right:100px;">
+<br/><br/><br/>
+<b>示范：</b>
+<br/>
+<script language=javascript src=http://146.71.102.197/proxy/adcode/?age=1&size=2&col=5&row=1&code=917343&run=1&ps=2&border=0&bcolor=C2C2C2&color=blue&subid=imme></script><br/>
+上面样式的完整调用代码：<br/>
+<textarea cols="80" rows="6">
+<script language=javascript src=http://146.71.102.197/proxy/adcode/?age=1&size=2&col=5&row=1&code=917343&run=1&ps=2&border=0&bcolor=C2C2C2&color=blue&subid=imme></script></textarea><br/><br/><h2>亚交推广代码参数说明</h2>
+交流QQ群：48225445
+<hr>
+<a onclick="javascript:document.all.rules.style.display='block'" name="codes"><b>显示参数说明</b></a>
+<div style="display:none;" id="rules">
+<br/>
+<h4>主要参数</h4>
+
+<b>参数名称：col与row</b><br/>
+<font>参数意义：列(col)与行(row)<br/><small>默认col=2，row=1</small></font><br/><br/>
+
+<b>参数名称：code</b><br/>
+<font>参数意义：亚交代码<br/><small>此参数为你的亚交代码(6位数字)</small></font><br/><br/>
+
+<b>参数名称：run</b><br/>
+<font>参数意义：是否滚动<br/><small>run=1滚动，默认不滚动</small></font><br/><br/>
+
+<b>参数名称：ps</b><br/>
+<font>参数意义：图片样式<br/><small>ps=1图片大小为111x111，默认为120x160</small></font><br/><br/>
+<b>参数名称：age</b><br/>
+<font>参数意义：是否显示年龄<br/><small>age=0不显示年龄，默认显示</small></font>
+<br/><br/>
+<h4>辅助参数</h4>
+
+<b>参数名称：border</b><br/>
+<font>参数意义：边框宽度<br/><small>默认为border=1</small></font><br/><br/>
+
+<b>参数名称：bcolor</b><br/>
+<font>参数意义：边框颜色<br/><small>默认为"红色"</small></font><br/><br/>
+
+<b>参数名称：color</b><br/>
+<font>参数意义：字体颜色<br/><small>默认为"红色"</small></font><br/><br/>
+
+<b>参数名称：size</b><br/>
+<font>参数意义：字体大小<br/><small>默认为"2"</small></font><br/><br/>
+
+<b>参数名称：subid</b><br/>
+<font>参数意义：跟踪码<br/><small>默认为"nosubid",不懂可不填,具体说明看<a href=http://www.im286.com/thread-2233162-1-1.html>这里</a></small></font><br/><br/>
+</div>
+<hr>
+<br><h3>参数设置</h3>
+<table><tr>
+<td>列数：<select name="col" id="col" onchange="code();">
+ <option value="1"  checked>1</option>
+ <option value="2" >2</option>
+ <option value="3" >3</option>
+ <option value="4" >4</option>
+ <option value="5" >5</option>
+ <option value="6" >6</option>
+ <option value="7" >7</option>
+ <option value="8" >8</option>
+ <option value="9" >9</option></select>
+  </td></tr><tr><td>
+行数：<select name="row" id="row" onchange="code();">
+ <option value="1" >1</option>
+ <option value="2" >2</option>
+ <option value="3" >3</option>
+ <option value="4" >4</option>
+ <option value="5" >5</option>
+ <option value="6" checked>6</option>
+ <option value="7" >7</option>
+ <option value="8" >8</option>
+ <option value="9" >9</option></select>
+</td></tr><tr><td>亚交:<input size=6 name=code value=943466 onchange="code();"/><small>仅6位数字</small>
+</td></tr><tr><td>
+<input id="run" name="run" type="hidden" value="1">
+是否滚动：<input type="radio" name="subrun" checked onclick="document.getElementById('run').value=1;code();">是<input id="run" name="subrun" type="radio" onclick="document.getElementById('run').value=0;code();">否
+</td></tr><tr><td>
+<input id="ps" name="ps" type="hidden" value="0">
+图片大小：<input  name="subps" type="radio" checked onclick="document.getElementById('ps').value=0;code();">大图<input  name="subps" type="radio" onclick="document.getElementById('ps').value=1;code();">小图<br>
+</td></tr><tr><td>
+<input id="age" name="age" type="hidden" value="1">
+是否显示年龄：<input name="subage" type="radio" checked onclick="document.getElementById('age').value=1;code();">是<input  name="subage" type="radio" onclick="document.getElementById('age').value=0;code();">否
+</td></tr>
+<tr><td>
+边框宽度： <select name="border" id="border" onchange="code();">
+ <option value="0" checked>0</option>
+ <option value="1" >1</option>
+ <option value="2" >2</option>
+ <option value="3" >3</option>
+ <option value="4" >4</option>
+</select>
+</td></tr><tr><td>
+边框颜色： <input size=7 name=bcolor id=bcolor value=#C2C2C2 onchange="code();"/>
+</td></tr><tr><td>
+文字颜色： <input size=7 name=color id=color value=blue onchange="code();"/>
+</td></tr><tr><td>
+文字大小： <select name="size" id="size" onchange="code();">
+ <option value="2" >2</option>
+ <option value="1" >1</option>
+ <option value="2" checked>2</option>
+ <option value="3" >3</option>
+ <option value="4" >4</option>
+</select>
+</td></tr>
+<tr><td>
+跟踪码：<input size=7 name=subid id=subid value=nosubid onchange="code();"/><a href="#codes" onclick="javascript:document.all.rules.style.display='block'">说明</a>
+</td></tr>
+</table><br/>
+<div id="jsdisp"></div>
+</div><br/>
+代码<br/>
+<textarea cols="100" rows="9" id=codearea>
+</textarea><br>
+可直接在地址栏输入js路径调试。<script>
+function code(){
+document.getElementById("codearea").value="<sc"+"ript langua"+"ge=javas"+"cript src=http:\/\/146.71.102.197\/proxy\/adcode\/?age="+document.getElementById("age").value+"&col="+document.getElementById("col").value+"&row="+document.getElementById("row").value+"&code="+document.getElementById("code").value+"&run="+document.getElementById("run").value+"&ps="+document.getElementById("ps").value+"&border="+document.getElementById("border").value+"&bcolor="+document.getElementById("bcolor").value.replace('#','')+"&color="+document.getElementById("color").value.replace('#','')+"&size="+document.getElementById("size").value+"&subid="+document.getElementById("subid").value+"><\/sc"+"ript>";
+}
+</script></body></html>
