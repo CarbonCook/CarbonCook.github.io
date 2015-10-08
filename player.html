@@ -63,13 +63,15 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      var player = $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function (event) {
           $(this).jPlayer("setMedia", {
             title: "Bubble",
             m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
             oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
           });
+          if (event.jPlayer.status.waitForPlay)
+            $(this).jPlayer("play");
         },
         cssSelectorAncestor: "#jp_container_1",
         swfPath: "/js",
@@ -80,9 +82,6 @@
         keyEnabled: true,
         remainingDuration: true,
         toggleDuration: true
-      });
-      $(".jp-details").click(function(){
-        alert(player.jPlayer("option", "play"));
       });
     });
   </script>
