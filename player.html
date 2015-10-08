@@ -63,7 +63,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
+      var player = $("#jquery_jplayer_1").jPlayer({
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Bubble",
@@ -80,10 +80,9 @@
         keyEnabled: true,
         remainingDuration: true,
         toggleDuration: true
-      }).jPlayer({
-        ready: function () {
-          $(this).jPlayer("play");
-        }
+      });
+      $(.jp-details).click(function(){
+        alert(player.jPlayer("option", "play"));
       });
     });
   </script>
