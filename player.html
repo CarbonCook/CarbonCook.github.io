@@ -80,7 +80,11 @@
         keyEnabled: true,
         remainingDuration: true,
         toggleDuration: true
-      }).jPlayer("play");
+      }).jPlayer({
+        ready: function () {
+          $(this).jPlayer("play");
+        }
+      });
     });
   </script>
 </body>
